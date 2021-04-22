@@ -1,12 +1,142 @@
+<!DOCTYPE html>
 <html>
 	<head>
-		<title>Типа вики</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="utf-8">
+		<meta name="description" content="Tairesh's personal page">
+		<title>Tairesh</title>
+		<meta property="og:title" content="Tairesh">
+		<meta property="og:type" content="website">
+		<meta name="theme-color" content="#ffce3e">
+		<link rel="canonical" href="https://tairesh.github.io">
+		<meta property="og:url" content="https://tairesh.github.io">
+		<style>
+			*, *:before, *:after { box-sizing: border-box; }
+			html { height: 100%; overflow-y: auto; overflow-x: hidden; }
+			body { display: block; margin: 0; height: auto; min-height: 100%; position: relative; font-size: 1rem; line-height: 1.6; color: #111111; font-family: 'Ubuntu', 'Open Sans', sans-serif; }
+			.content { pointer-events: none; min-height: 697px; justify-content: center; display: flex !important; flex-direction: column; margin: 0 auto; width: 1140px; }
+			@media (min-width: 1200px) {
+				.content { width: 1140px; }
+			}
+			@media (min-width: 992px) and (max-width: 1199px) {
+				.content { width: 940px; }
+			}
+			@media (min-width: 768px) and (max-width: 991px) {
+				.content { width: 720px; }
+			}
+			@media (min-width: 576px) and (max-width: 767px) {
+				.content { width: 540px; }
+			}
+			@media (max-width: 575px) {
+				.content { width: 340px; }
+			}
+			.content:before, .content:after { content: ''; display: table; }
+			.line-horizontal { width: 194px; margin: 60px auto 0 0; border-width: 6px 0 0 0; border-color: #ffce3e; border-style: solid; }
+			.motto { font-size: 3.5rem; margin: 30px 30px 0 0; line-height: 1.1; font-weight: bold; word-wrap: normal; font-family: Ubuntu,Roboto,sans-serif; pointer-events: all; cursor: default; }
+			.text { margin: 20px 218px 60px 0; }
+		</style>
 	</head>
 	<body>
-		<h1>Главная страница</h1>
-		<ul>
-			<li><a href="death-or-glory/index.html">Смерть или слава</a></li>
-		</ul>
-<a HREF="magnet:?xt=urn:btih:0516BD821F3D0494F451672F0819834CF335E96E&tr=http%3A%2F%2Fbt.rutracker.cc%2Fann%3Fmagnet">ASDDDSA</A>
+		<section class="main-section" id="main-section">
+			<div class="content">
+				<div class="line-horizontal"></div>
+				<h1 class="motto" id="motto">Life is an adventure</h1>
+				<p class="text">There is nothing interesting here. Go away.</p>
+			</div>
+		</section>
+		<script>
+			const mottos = [
+				"Life is an adventure",
+				"Science, bitch!",
+				"Kids are all right",
+				"Kids are alt-right",
+				"4815162342 lines of code!",
+				"Creeper? Aw man…",
+				"日本ハロー！",
+				"/a horse",
+				"The cake was NOT a lie",
+				"Do a barrel roll!",
+				"I always be watching or listening or both!",
+				"Freedom Belarus!",
+				"All the good girls go to hell",
+				"Hello, darkness, my old friend",
+				"Your ass belongs to me now!",
+				"CATS: ALL&nbsp;YOUR&nbsp;BASE&nbsp;ARE&nbsp;BELONGS&nbsp;TO&nbsp;US",
+				"If you have said A, you must also say CAB",
+				"#RussianLivesMatter",
+				"#BlackLivesMatter",
+				"It feels like there's oceans between&nbsp;you&nbsp;and&nbsp;me",
+				"wikiHow: How To Kidnap A Loli",
+				"Your silence is my favorite sound",
+				"Bullshit as a service",
+				"Now with HTML5!",
+				"ЖЫВТОНЕ ЧО ЧО УПЯЧКА УПЯЧКА УПЯЧКА!!!",
+				"The stars look very different today",
+				"Spend your lives in sin and misery in the House&nbsp;of&nbsp;the&nbsp;Rising&nbsp;Sun",
+				"DO NOT refresh this page",
+				"Do you trust this computer? <em>Are&nbsp;you&nbsp;sure?</em>",
+				"You are using an&nbsp;outdated&nbsp;browser (probably)",
+				"Aerials in the sky",
+				"Revolution Radio",
+				"Primo victoria",
+				"Through the gates&nbsp;of&nbsp;hell as&nbsp;we&nbsp;make&nbsp;our&nbsp;way&nbsp;to&nbsp;heaven",
+				"This site DO NOT uses cookies",
+				"No matter where you go, everyone's&nbsp;connected.",
+				"We are all now connected by the Internet, like&nbsp;neurons&nbsp;in&nbsp;a&nbsp;giant&nbsp;brain",
+				"Super-cala-fra-jalistic-expi-ela-docious is&nbsp;a&nbsp;word&nbsp;to&nbsp;me, mama&nbsp;mia",
+				"Я&nbsp;ненавижу&nbsp;Фидонет и&nbsp;стремлюсь&nbsp;его&nbsp;уничтожить",
+				"Cut my life into pieces this&nbsp;is&nbsp;my&nbsp;last&nbsp;resort",
+				"I push my fingers into my eyes – it's&nbsp;the&nbsp;only&nbsp;thing&nbsp;that&nbsp;slowly&nbsp;stops&nbsp;the&nbsp;ache",
+				"This website DO NOT wants to: know&nbsp;your&nbsp;location",
+				"For&nbsp;here am&nbsp;I sitting&nbsp;in&nbsp;a&nbsp;tin&nbsp;can far&nbsp;above&nbsp;the&nbsp;world",
+				"Close this page immediately to&nbsp;prove&nbsp;you&nbsp;are&nbsp;human",
+				"Planet&nbsp;Earth&nbsp;is&nbsp;blue and&nbsp;there's&nbsp;nothing&nbsp;I&nbsp;can&nbsp;do",
+				"You need to update your Flash Player (for&nbsp;some&nbsp;reason)",
+				"You need to <a href=\"https://deletefacebook.com\">delete&nbsp;facebook</a>",
+				"I wish I had an&nbsp;American&nbsp;girlfriend",
+				"I am exactly the person that I want&nbsp;to&nbsp;be",
+				"Don't click here!",
+				"When&nbsp;life&nbsp;gives&nbsp;you&nbsp;lemon-off, make&nbsp;the&nbsp;National&nbsp;Bolshevik&nbsp;Party",
+				"Разум когда-нибудь победит!",
+				"Life is hella strange",
+				"I lost something in&nbsp;the&nbsp;hills",
+				"Rachel in the dark&nbsp;room",
+				"Welcome to the real&nbsp;world",
+				"Welcome to&nbsp;the&nbsp;Internet. Let&nbsp;me&nbsp;guide&nbsp;you.",
+				"NO EMOJI",
+				"Oh, hi Mark",
+				"If you're reading this, you've been in a coma for almost 20 years now. We're trying a new technique. We don't know where this message will end up in your dream, but we hope it works. Please wake up, we miss you.",
+				"You know what they call a&nbsp;Quarter&nbsp;Pounder&nbsp;with&nbsp;Cheese in&nbsp;Paris?",
+				"Дайте мне «Месть&nbsp;королевы&nbsp;Анны», ветер&nbsp;в&nbsp;паруса и&nbsp;смесь&nbsp;номер&nbsp;пять",
+				"This love is like the wildfire",
+				"Мир ловил меня, но&nbsp;так&nbsp;и&nbsp;не&nbsp;поймал",
+				"We played hide and seek in waterfalls we were younger",
+				"Mr. Blue Sky, please&nbsp;tell&nbsp;us&nbsp;why you&nbsp;had&nbsp;to&nbsp;hide&nbsp;away for&nbsp;so&nbsp;long",
+				"Fade out again",
+				"Nothing is true; everything is permitted",
+				"There goes my burrito!"
+			]
+			if ((new Date()).getDay() == 3) { mottos.push("It is wednesday my dudes") }
+
+			function shuffle(list) {
+				for (let i = list.length - 1; i > 0; i--) {
+					let j = Math.floor(Math.random() * (i + 1));
+					[list[i], list[j]] = [list[j], list[i]];
+				}
+			}
+
+			function updateMotto() {
+				let block =  document.getElementById('motto')
+				if (mottos.length > 0) {
+					block.innerHTML = mottos.pop();
+				} else {
+					block.innerHtml = "No more funny texts, sorry";
+					block.onclick = function() { return false };
+				}
+			}
+
+			(function() { shuffle(mottos); updateMotto(); document.getElementById('motto').onclick = updateMotto })()
+		</script>
 	</body>
 </html>
+
