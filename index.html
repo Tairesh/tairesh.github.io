@@ -10,7 +10,7 @@
 		<meta property="og:image" content="https://tairesh.github.io/img/lemon128.png">
 		<meta property="og:image:width" content="128">
 		<meta property="og:image:height" content="128">
-		<meta name="theme-color" content="#ffce3e">i
+		<meta name="theme-color" content="#ffce3e">
 		<link rel="canonical" href="https://tairesh.github.io">
 		<meta property="og:url" content="https://tairesh.github.io">
 		<link rel="shortcut icon" href="/favicon.ico">
@@ -24,7 +24,13 @@
 			*, *:before, *:after { box-sizing: border-box; }
 			html { height: 100%; overflow-y: auto; overflow-x: hidden; }
 			body { display: block; margin: 0; height: auto; min-height: 100%; position: relative; font-size: 1rem; line-height: 1.6; color: #111111; font-family: 'Ubuntu', 'Open Sans', sans-serif; }
+            body.dark { background-color: #111; color: #eee; }
 			.content { pointer-events: none; min-height: 697px; justify-content: center; display: flex !important; flex-direction: column; margin: 0 auto; width: 1140px; }
+			.content:before, .content:after { content: ''; display: table; }
+			.line-horizontal { width: 194px; margin: 60px auto 0 0; border-width: 6px 0 0 0; border-color: #ffce3e; border-style: solid; }
+			.motto { font-size: 3.5rem; margin: 30px 30px 0 0; line-height: 1.1; font-weight: bold; word-wrap: normal; font-family: Ubuntu,Roboto,sans-serif; pointer-events: all; cursor: default; }
+			.text { margin: 20px 218px 60px 0; }
+            a { pointer-events: auto; color: #ffce3e; text-decoration: none; }
 			@media (min-width: 1200px) {
 				.content { width: 1140px; }
 			}
@@ -33,17 +39,19 @@
 			}
 			@media (min-width: 768px) and (max-width: 991px) {
 				.content { width: 720px; }
+                .text, .motto { margin-right: 0; }
+                .motto { font-size: 2.8rem; }
 			}
 			@media (min-width: 576px) and (max-width: 767px) {
 				.content { width: 540px; }
+                .text, .motto { margin-right: 0; }
+                .motto { font-size: 2.1rem; }
 			}
 			@media (max-width: 575px) {
 				.content { width: 340px; }
+                .text, .motto { margin-right: 0; }
+                .motto { font-size: 1.3rem; }
 			}
-			.content:before, .content:after { content: ''; display: table; }
-			.line-horizontal { width: 194px; margin: 60px auto 0 0; border-width: 6px 0 0 0; border-color: #ffce3e; border-style: solid; }
-			.motto { font-size: 3.5rem; margin: 30px 30px 0 0; line-height: 1.1; font-weight: bold; word-wrap: normal; font-family: Ubuntu,Roboto,sans-serif; pointer-events: all; cursor: default; }
-			.text { margin: 20px 218px 60px 0; }
 		</style>
 	</head>
 	<body>
@@ -51,7 +59,7 @@
 			<div class="content">
 				<div class="line-horizontal"></div>
 				<h1 class="motto" id="motto">Life is an adventure</h1>
-				<p class="text">There is nothing interesting here. Go away.</p>
+				<p class="text">Telegram: <a href="https://t.me/tairesh">@Tairesh</a></p>
 			</div>
 		</section>
 		<script>
@@ -71,7 +79,7 @@
 				"All the good girls go to hell",
 				"Hello, darkness, my old friend",
 				"Your ass belongs to me now!",
-				"CATS: ALL&nbsp;YOUR&nbsp;BASE&nbsp;ARE&nbsp;BELONGS&nbsp;TO&nbsp;US",
+				"CATS: ALL&nbsp;YOUR&nbsp;BASE ARE&nbsp;BELONGS&nbsp;TO&nbsp;US",
 				"If you have said A, you must also say CAB",
 				"#RussianLivesMatter",
 				"#BlackLivesMatter",
@@ -82,7 +90,7 @@
 				"Now with HTML5!",
 				"ЖЫВТОНЕ ЧО ЧО УПЯЧКА УПЯЧКА УПЯЧКА!!!",
 				"The stars look very different today",
-				"Spend your lives in sin and misery in the House&nbsp;of&nbsp;the&nbsp;Rising&nbsp;Sun",
+				"Spend your lives in&nbsp;sin&nbsp;and&nbsp;misery in&nbsp;the&nbsp;House of&nbsp;the&nbsp;Rising&nbsp;Sun",
 				"DO NOT refresh this page",
 				"Do you trust this computer? <em>Are&nbsp;you&nbsp;sure?</em>",
 				"You are using an&nbsp;outdated&nbsp;browser (probably)",
@@ -92,21 +100,21 @@
 				"Through the gates&nbsp;of&nbsp;hell as&nbsp;we&nbsp;make&nbsp;our&nbsp;way&nbsp;to&nbsp;heaven",
 				"This site DO NOT uses cookies",
 				"No matter where you go, everyone's&nbsp;connected.",
-				"We are all now connected by the Internet, like&nbsp;neurons&nbsp;in&nbsp;a&nbsp;giant&nbsp;brain",
+				"We are all now connected by&nbsp;the&nbsp;Internet, like&nbsp;neurons in&nbsp;a&nbsp;giant&nbsp;brain",
 				"Super-cala-fra-jalistic-expi-ela-docious is&nbsp;a&nbsp;word&nbsp;to&nbsp;me, mama&nbsp;mia",
 				"Я&nbsp;ненавижу&nbsp;Фидонет и&nbsp;стремлюсь&nbsp;его&nbsp;уничтожить",
 				"Cut my life into pieces this&nbsp;is&nbsp;my&nbsp;last&nbsp;resort",
-				"I push my fingers into my eyes – it's&nbsp;the&nbsp;only&nbsp;thing&nbsp;that&nbsp;slowly&nbsp;stops&nbsp;the&nbsp;ache",
+				"I push my fingers into my eyes – it's&nbsp;the&nbsp;only&nbsp;thing that&nbsp;slowly&nbsp;stops&nbsp;the&nbsp;ache",
 				"This website DO NOT wants to: know&nbsp;your&nbsp;location",
-				"For&nbsp;here am&nbsp;I sitting&nbsp;in&nbsp;a&nbsp;tin&nbsp;can far&nbsp;above&nbsp;the&nbsp;world",
+				"For&nbsp;here am&nbsp;I&nbsp;sitting&nbsp;in&nbsp;a&nbsp;tin&nbsp;can far&nbsp;above&nbsp;the&nbsp;world",
 				"Close this page immediately to&nbsp;prove&nbsp;you&nbsp;are&nbsp;human",
 				"Planet&nbsp;Earth&nbsp;is&nbsp;blue and&nbsp;there's&nbsp;nothing&nbsp;I&nbsp;can&nbsp;do",
-				"You need to update your Flash Player (for&nbsp;some&nbsp;reason)",
+				"You need to update your Flash&nbsp;Player (for&nbsp;some&nbsp;reason)",
 				"You need to <a href=\"https://deletefacebook.com\">delete&nbsp;facebook</a>",
 				"I wish I had an&nbsp;American&nbsp;girlfriend",
 				"I am exactly the person that I want&nbsp;to&nbsp;be",
 				"Don't click here!",
-				"When&nbsp;life&nbsp;gives&nbsp;you&nbsp;lemon-off, make&nbsp;the&nbsp;National&nbsp;Bolshevik&nbsp;Party",
+				"When&nbsp;life&nbsp;gives&nbsp;you&nbsp;lemon-off, make&nbsp;the&nbsp;National Bolshevik Party",
 				"Разум когда-нибудь победит!",
 				"Life is hella strange",
 				"I lost something in&nbsp;the&nbsp;hills",
@@ -115,16 +123,17 @@
 				"Welcome to&nbsp;the&nbsp;Internet. Let&nbsp;me&nbsp;guide&nbsp;you.",
 				"NO EMOJI",
 				"Oh, hi Mark",
-				"If you're reading this, you've been in a coma for almost 20 years now. We're trying a new technique. We don't know where this message will end up in your dream, but we hope it works. Please wake up, we miss you.",
+				"If you're reading this, you've been in a coma for almost 20 years now. We're trying a new technique. We don't know where this message will end up in your dream, but we hope it works. Please wake up, we&nbsp;miss&nbsp;you.",
 				"You know what they call a&nbsp;Quarter&nbsp;Pounder&nbsp;with&nbsp;Cheese in&nbsp;Paris?",
 				"Дайте мне «Месть&nbsp;королевы&nbsp;Анны», ветер&nbsp;в&nbsp;паруса и&nbsp;смесь&nbsp;номер&nbsp;пять",
 				"This love is like the wildfire",
 				"Мир ловил меня, но&nbsp;так&nbsp;и&nbsp;не&nbsp;поймал",
-				"We played hide and seek in waterfalls we were younger",
+				"We played hide&nbsp;and&nbsp;seek in&nbsp;waterfalls we&nbsp;were&nbsp;younger",
 				"Mr. Blue Sky, please&nbsp;tell&nbsp;us&nbsp;why you&nbsp;had&nbsp;to&nbsp;hide&nbsp;away for&nbsp;so&nbsp;long",
 				"Fade out again",
-				"Nothing is true; everything is permitted",
-				"There goes my burrito!"
+				"Nothing is true; everything&nbsp;is&nbsp;permitted",
+				"There goes my burrito!",
+                "There is nothing interesting here. Go&nbsp;away."
 			]
 			if ((new Date()).getDay() == 3) { mottos.push("It is wednesday my dudes") }
 
@@ -146,6 +155,10 @@
 			}
 
 			(function() { shuffle(mottos); updateMotto(); document.getElementById('motto').onclick = updateMotto })()
+
+            // dark-mode media query matched or not
+            let darkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            if(darkMode) document.body.classList.add('dark');
 		</script>
 	</body>
 </html>
