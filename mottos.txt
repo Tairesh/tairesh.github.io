@@ -77,3 +77,4 @@ The Sun is a deadly laser
 Rust is memory safe language with zero cost abstractions and it's&nbsp;faster&nbsp;than&nbsp;C++
 Rust is bullshit
 Btw I use vim
+I hate Rust
