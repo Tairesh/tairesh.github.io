@@ -76,3 +76,4 @@ The Sun is a deadly laser
 Вы думаете, что если человек цитирует Зурзмансора или Гегеля, то&nbsp;это&nbsp;—&nbsp;о! А такой человек смотрит на Вас и видит кучу дерьма, ему Вас не жалко, потому что Вы и по Гегелю дерьмо, и по Зурзмансору тоже дерьмо. Дерьмо&nbsp;по&nbsp;определению.
 Rust is memory safe language with zero cost abstractions and it's&nbsp;faster&nbsp;than&nbsp;C++
 Rust is bullshit
+Btw I use vim
