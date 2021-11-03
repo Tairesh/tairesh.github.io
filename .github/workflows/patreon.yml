@@ -23,7 +23,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Download new badge
-        run: wget https://img.shields.io/endpoint.svg?url=https%3A%2F%2Fshieldsio-patreon.vercel.app%2Fapi%3Fusername%3Dtairesh%26type%3Dpledges&style=flat -O img/patreon.svg
+        run: wget -O img/patreon.svg "https://img.shields.io/endpoint.svg?url=https%3A%2F%2Fshieldsio-patreon.vercel.app%2Fapi%3Fusername%3Dtairesh%26type%3Dpledges&style=flat"
 
       - name: Commit & Push changes
         uses: actions-js/push@master
