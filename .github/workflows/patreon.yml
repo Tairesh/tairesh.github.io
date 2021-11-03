@@ -1,0 +1,31 @@
+# This is a basic workflow to help you get started with Actions
+
+name: pateron
+
+# Controls when the workflow will run
+on:
+  # Triggers the workflow on push or pull request events but only for the gh-pages branch
+  schedule:
+    - cron: '0 0 * * *'
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v2
+
+      # Runs a single command using the runners shell
+      - name: Download new badge
+        run: wget https://img.shields.io/endpoint.svg?url=https%3A%2F%2Fshieldsio-patreon.vercel.app%2Fapi%3Fusername%3Dtairesh%26type%3Dpledges&style=flat -O img/patreon.svg
+
+      - name: Commit & Push changes
+        uses: actions-js/push@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: gh-pages
