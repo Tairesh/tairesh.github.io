@@ -13,17 +13,17 @@
 		<meta property="og:image:height" content="600">
 		<meta name="theme-color" content="#00441c">
 		<link rel="canonical" href="https://tairesh.ml">
-		<link rel="shortcut icon" href="/favicon.ico">
-		<link rel="icon" type="image/png" sizes="32x32" href="/img/apple32.png">
-		<link rel="icon" type="image/png" sizes="128x128" href="/img/apple128.png">
 		<meta property="twitter:image" content="https://tairesh.ml/img/preview.jpg">
+		<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 	</head>
 	<body>
 		<section class="main-section" id="main-section">
 			<div class="content">
 				<div class="line-horizontal"></div>
-				<h1 class="motto" id="motto">Loading funny text...</h1>
+				<h1 class="motto" id="motto">Loading funny text…</h1>
 				<p class="text">
 					<a href="https://t.me/tairesh">
 						<img src="img/telegram.svg" alt="Telegram: @Tairesh">
@@ -47,6 +47,7 @@
 			</div>
 		</section>
 		<script>
+			// global list 'cause I don't care
 			const mottos = [
 				"Life is an adventure",
 				"Science, bitch!",
@@ -139,9 +140,14 @@
 			if ((new Date()).getDay() == 3)
 				mottos.push("It is wednesday my&nbsp;dudes");
 
-			// dark-mode media query matched or not
-			let darkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
-			if (darkMode) document.body.classList.add('dark');
+			// dark-mode media query matching
+			if (window.matchMedia('(prefers-color-scheme: dark)').matches)
+				document.body.classList.add('dark');
+
+			// my own web-framework or something, idk didn't watched JQuery
+			function $(id) {
+				return document.getElementById(id)
+			}
 
 			function shuffle(list) {
 				for (let i = list.length - 1; i > 0; i--) {
@@ -150,8 +156,9 @@
 				}
 			}
 
+			// doing funny things
 			function updateMotto() {
-				let block =  document.getElementById('motto');
+				let block =  $('motto');
 				if (mottos.length > 0) {
 					block.innerHTML = mottos.pop();
 					window.sessionStorage.setItem('mottos', mottos.join('\n'))
@@ -164,7 +171,7 @@
 			(function() {
 				shuffle(mottos);
 				updateMotto();
-				document.getElementById('motto').onclick = updateMotto
+				$('motto').onclick = updateMotto
 			})()
 		</script>
 	</body>
