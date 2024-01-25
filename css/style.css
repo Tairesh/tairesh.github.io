@@ -9,6 +9,7 @@ body.dark { background-color: #111; color: #eee; }
 .motto { font-size: 2rem; margin: 30px 30px 30px 0; line-height: 1.1; font-weight: bold; word-wrap: normal; font-family: 'Ubuntu', 'Roboto', sans-serif; pointer-events: all; cursor: default; }
 .text { margin: 0 40% 1em 0; }
 a { pointer-events: auto; color: #b0da11; text-decoration: none; }
+.cat { position: fixed; right: 0; bottom: 0; }
 @media (min-width: 1200px) {
     .content { width: 1140px; }
 }
